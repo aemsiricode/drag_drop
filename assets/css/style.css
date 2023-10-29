@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 26.25rem;
+  gap: 15px;
+}
+
+.container .box{
+  position: relative;
+  width: 11.5rem;
+  height: 11.5rem;
+  border-radius: .875rem;
+  border: 2px solid #333333;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .box .image{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/img/01.jpg");
+}
+
+.container .box.hovered{
+  border: 2px dashed #333333;
+}
